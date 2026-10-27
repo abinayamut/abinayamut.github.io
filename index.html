@@ -1,0 +1,1099 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Abinaya M. | CSE Student & Developer</title>
+  <meta name="description" content="Portfolio of Abinaya M. — Computer Science Engineering student at Kongunadu College of Engineering and Technology, Trichy. Exploring Java backend, AI/ML, and full-stack development.">
+  <meta property="og:title" content="Abinaya M. | CSE Student & Developer">
+  <meta property="og:description" content="Portfolio of Abinaya M. — Java backend, AI/ML, and full-stack development.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="profile/abinaya_avatar_3d.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Abinaya M. | CSE Student & Developer">
+  <meta name="twitter:description" content="Portfolio of Abinaya M. — Java backend, AI/ML, and full-stack development.">
+  <meta name="twitter:image" content="profile/abinaya_avatar_3d.png">
+  <link rel="icon" type="image/png" href="profile/abinaya_avatar_3d.png">
+  <link rel="stylesheet" href="style.css">
+  <!-- Avatar-specific style additions (Hero section only) -->
+  <style>
+    /* ── 3D AVATAR HERO OVERRIDES ── */
+    /* The avatar is a 3D PNG on a light purple background.
+       We display it in a blob frame that matches the design system. */
+    .avatar-frame {
+      background: linear-gradient(145deg, #dcc8f0, #c4a6e3 40%, #b08ad8);
+      /* Slightly deeper gradient to frame the light avatar background */
+    }
+    .avatar-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;      /* show full avatar without cropping */
+      object-position: center bottom;
+      padding: 0 8px;           /* breathing room on sides */
+    }
+
+    /* Reduced-motion: disable floating animation */
+    @media (prefers-reduced-motion: reduce) {
+      .avatar-frame,
+      .float-chip,
+      .dot-pulse,
+      .bg-lines::after {
+        animation: none !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ── AMBIENT BACKGROUND ── -->
+  <div class="bg-lines" aria-hidden="true"></div>
+  <div id="cursor-glow" aria-hidden="true"></div>
+
+  <!-- ── CUSTOM CURSOR ── -->
+  <div id="cursor-dot" aria-hidden="true"></div>
+  <div id="cursor-ring" aria-hidden="true"></div>
+
+  <!-- ════════════════════════════════════════
+       NAVIGATION
+  ════════════════════════════════════════ -->
+  <nav id="main-nav" role="navigation" aria-label="Main navigation">
+    <a class="nav-logo" href="#home" aria-label="Home">AbinayaMuthu</a>
+
+    <ul class="nav-links" role="list">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#certificates">Certificates</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="nav-cta">
+      <a class="btn btn-ghost btn-sm" href="resume/abinaya-resume.pdf" download="Abinaya_Resume.pdf">
+        ↓ Resume
+      </a>
+      <button class="hamburger" id="hamburger-btn" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ── MOBILE MENU ── -->
+  <div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Mobile navigation" aria-hidden="true">
+    <a href="#about" class="mobile-nav-link">About</a>
+    <a href="#skills" class="mobile-nav-link">Skills</a>
+    <a href="#projects" class="mobile-nav-link">Projects</a>
+    <a href="#experience" class="mobile-nav-link">Experience</a>
+    <a href="#achievements" class="mobile-nav-link">Achievements</a>
+    <a href="#certificates" class="mobile-nav-link">Certificates</a>
+    <a href="#contact" class="mobile-nav-link">Contact</a>
+  </div>
+
+  <main>
+
+    <!-- ════════════════════════════════════════
+         HERO SECTION
+    ════════════════════════════════════════ -->
+    <section id="home" aria-labelledby="hero-heading">
+      <div class="section-wrap">
+        <div class="hero-grid">
+
+          <!-- LEFT: Text content -->
+          <div class="hero-content">
+            <div class="hero-eyebrow reveal">
+              <span class="dot-pulse" aria-hidden="true"></span>
+              <span>Available for internships &amp; collaborations</span>
+            </div>
+
+            <h1 class="hero-title reveal reveal-delay-1" id="hero-heading">
+              Hi, I'm<br>
+              <em>Abinaya M.</em>
+            </h1>
+
+            <p class="hero-desc reveal reveal-delay-2">
+              Computer Science Engineering student at Kongunadu College of Engineering and Technology, Trichy.
+              Building thoughtful software at the intersection of <strong>Java backend</strong>,
+              <strong>AI/ML</strong>, and <strong>full-stack development</strong>.
+            </p>
+
+            <div class="hero-actions reveal reveal-delay-3">
+              <a class="btn btn-primary" href="#projects">
+                Explore my work
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m7 17 10-10M7 7h10v10"/></svg>
+              </a>
+              <a class="btn btn-ghost" href="resume/abinaya-resume.pdf" download="Abinaya_Resume.pdf">
+                ↓ Download Resume
+              </a>
+              <a class="btn btn-ghost" href="#contact">Contact me</a>
+            </div>
+
+            <div class="hero-stats reveal reveal-delay-4">
+              <div class="hero-stat">
+                <strong>7.8<small style="font-size:14px">/10</small></strong>
+                <span>CGPA</span>
+              </div>
+              <div class="hero-stat">
+                <strong>Top&nbsp;10</strong>
+                <span>AISEHack 2024</span>
+              </div>
+              <div class="hero-stat">
+                <strong>5+</strong>
+                <span>Projects built</span>
+              </div>
+              <div class="hero-stat">
+                <strong>2027</strong>
+                <span>Graduation</span>
+              </div>
+            </div>
+
+            <!-- Social links -->
+            <div class="hero-socials reveal reveal-delay-5">
+              <a href="https://github.com/abinayamut" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub profile">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836a9.59 9.59 0 012.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+                GitHub
+              </a>
+              <a href="https://www.linkedin.com/in/abinaya1111/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn profile">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                LinkedIn
+              </a>
+            </div>
+          </div>
+
+          <!-- RIGHT: 3D Avatar visual -->
+          <div class="hero-visual" aria-hidden="true">
+            <div class="avatar-orbit">
+              <!-- Floating decorative chips -->
+              <div class="float-chip chip-a">☕ Learning by building</div>
+              <div class="float-chip chip-b">🏆 AISEHack Top 10</div>
+              <div class="float-chip chip-c">☕ Java · AI · Full-stack</div>
+
+              <!-- Avatar blob frame with floating animation -->
+              <div class="avatar-frame">
+                <img
+                  src="profile/abinaya_avatar_3d.png"
+                  alt="3D avatar of Abinaya M., a developer sitting at a laptop"
+                  width="300"
+                  height="370"
+                  loading="eager"
+                  fetchpriority="high"
+                >
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /hero-grid -->
+      </div><!-- /section-wrap -->
+    </section><!-- /hero -->
+
+
+    <!-- ════════════════════════════════════════
+         ABOUT SECTION
+    ════════════════════════════════════════ -->
+    <section id="about" aria-labelledby="about-heading">
+      <div class="section-wrap">
+        <div class="section-header reveal">
+          <div>
+            <span class="eyebrow">The person behind the code</span>
+            <h2 class="heading" id="about-heading">A little about me</h2>
+            <p class="sub-heading">
+              Student at Kongunadu College of Engineering and Technology, Trichy. I enjoy solving problems,
+              learning new tools, and collaborating on projects that have a real purpose.
+            </p>
+          </div>
+        </div>
+
+        <div class="about-grid">
+          <!-- Bio card -->
+          <div class="glass-card reveal">
+            <h3>My focus</h3>
+            <p style="color:var(--muted); font-size:15px; line-height:1.8; margin-bottom:20px;">
+              Building a strong foundation in programming and backend engineering, while staying curious
+              about how AI can make applications smarter. I believe in learning through building — every
+              project teaches something new.
+            </p>
+            <div class="skill-tags">
+              <span class="skill-tag">Java &amp; Spring Boot</span>
+              <span class="skill-tag">Problem Solving</span>
+              <span class="skill-tag">AI / ML</span>
+              <span class="skill-tag">Web Development</span>
+              <span class="skill-tag">MySQL</span>
+              <span class="skill-tag">Python</span>
+            </div>
+          </div>
+
+          <!-- Stats grid -->
+          <div class="stats-grid reveal reveal-delay-1">
+            <div class="stat-box">
+              <strong>2023–27</strong>
+              <span>B.E. CSE · Undergraduate</span>
+            </div>
+            <div class="stat-box">
+              <strong>7.8/10</strong>
+              <span>CGPA (current)</span>
+            </div>
+            <div class="stat-box">
+              <strong>Top 10</strong>
+              <span>AISEHack Flood Mapping Challenge</span>
+            </div>
+            <div class="stat-box">
+              <strong>Build → Learn</strong>
+              <span>My favourite cycle</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-profile-grid">
+          <!-- Photo card -->
+          <div class="about-photo-card reveal reveal-delay-2">
+            <img
+              src="profile/abinaya-professional-photo2.jpg"
+              alt="Abinaya M. — professional portrait"
+              loading="lazy"
+            >
+            <div class="photo-badge">Abinaya M. · CSE '27</div>
+          </div>
+
+          <!-- Career objective card -->
+          <div class="glass-card reveal reveal-delay-3" style="display:flex; flex-direction:column;">
+            <h3>Where I'm headed</h3>
+            <p style="color:var(--muted); font-size:15px; line-height:1.8;">
+              Deepening my expertise in Java, DSA, SQL, and backend engineering while exploring
+              AI-powered applications. Actively preparing for software engineering opportunities
+              and open to internships, collaborations, and meaningful projects.
+            </p>
+            <div style="margin-top:auto; padding-top:18px; display:flex; gap:10px; flex-wrap:wrap;">
+              <span class="skill-tag">Open to internships</span>
+              <span class="skill-tag">Trichy, India</span>
+              <span class="skill-tag">Remote-friendly</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ════════════════════════════════════════
+         SKILLS SECTION
+    ════════════════════════════════════════ -->
+    <section id="skills" aria-labelledby="skills-heading">
+      <div class="section-wrap">
+        <div class="section-header reveal">
+          <div>
+            <span class="eyebrow">What I work with</span>
+            <h2 class="heading" id="skills-heading">Skills &amp; Technologies</h2>
+            <p class="sub-heading">Technologies I've used across coursework, projects, and internship tasks.</p>
+          </div>
+        </div>
+
+        <div class="about-grid">
+          <div class="glass-card reveal">
+            <h3>💻 Programming Languages</h3>
+            <div class="skill-tags" style="margin-top:14px;">
+              <span class="skill-tag">Java</span>
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">C</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">SQL</span>
+            </div>
+          </div>
+
+          <div class="glass-card reveal reveal-delay-1">
+            <h3>⚙️ Backend &amp; Frameworks</h3>
+            <div class="skill-tags" style="margin-top:14px;">
+              <span class="skill-tag">Spring Boot</span>
+              <span class="skill-tag">Express.js</span>
+              <span class="skill-tag">Flask</span>
+              <span class="skill-tag">REST APIs</span>
+              <span class="skill-tag">Node.js</span>
+            </div>
+          </div>
+
+          <div class="glass-card reveal reveal-delay-2">
+            <h3>🌐 Web Technologies</h3>
+            <div class="skill-tags" style="margin-top:14px;">
+              <span class="skill-tag">HTML5</span>
+              <span class="skill-tag">CSS3</span>
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">Bootstrap</span>
+              <span class="skill-tag">MERN Stack</span>
+            </div>
+          </div>
+
+          <div class="glass-card reveal reveal-delay-3">
+            <h3>🤖 AI &amp; Machine Learning</h3>
+            <div class="skill-tags" style="margin-top:14px;">
+              <span class="skill-tag">PyTorch</span>
+              <span class="skill-tag">Scikit-learn</span>
+              <span class="skill-tag">Isolation Forest</span>
+              <span class="skill-tag">UNet++</span>
+              <span class="skill-tag">Streamlit</span>
+            </div>
+          </div>
+
+          <div class="glass-card reveal reveal-delay-4">
+            <h3>🗄️ Databases</h3>
+            <div class="skill-tags" style="margin-top:14px;">
+              <span class="skill-tag">MySQL</span>
+              <span class="skill-tag">MongoDB</span>
+              <span class="skill-tag">JDBC</span>
+            </div>
+          </div>
+
+          <div class="glass-card reveal reveal-delay-5">
+            <h3>🛠️ Tools &amp; Platforms</h3>
+            <div class="skill-tags" style="margin-top:14px;">
+              <span class="skill-tag">Git &amp; GitHub</span>
+              <span class="skill-tag">VS Code</span>
+              <span class="skill-tag">IntelliJ IDEA</span>
+              <span class="skill-tag">Postman</span>
+              <span class="skill-tag">Linux</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ════════════════════════════════════════
+         PROJECTS SECTION
+    ════════════════════════════════════════ -->
+    <section id="projects" aria-labelledby="projects-heading">
+      <div class="section-wrap">
+        <div class="section-header reveal">
+          <div>
+            <span class="eyebrow">Selected work</span>
+            <h2 class="heading" id="projects-heading">Projects I've explored</h2>
+            <p class="sub-heading">A mix of academic work, hackathon builds, and experiments.</p>
+          </div>
+        </div>
+
+        <div class="filter-bar" role="group" aria-label="Filter projects">
+          <button class="filter-btn active" data-filter="all" id="filter-all">All</button>
+          <button class="filter-btn" data-filter="ai" id="filter-ai">AI / ML</button>
+          <button class="filter-btn" data-filter="web" id="filter-web">Web / Software</button>
+        </div>
+
+        <div class="projects-grid" id="projects-grid">
+
+          <!-- Flood Mapping -->
+          <article class="project-card reveal" data-cat="ai">
+            <div class="project-thumb">
+              <img src="projects/flood_maping_challenge/Flood_Mapping_ModelDashboard_ss.png"
+                   alt="Flood Mapping dashboard screenshot" loading="lazy">
+            </div>
+            <div class="project-body">
+              <h3>Flood Mapping from Satellite Imagery</h3>
+              <p>Deep-learning flood extent mapping using UNet++ with a ResNet-34 encoder trained on Sentinel-1 SAR imagery. Team placed in the Top 10 of the AISEHack flood mapping challenge.</p>
+              <div class="project-tags">
+                <span class="project-tag">Python</span>
+                <span class="project-tag">PyTorch</span>
+                <span class="project-tag">UNet++</span>
+                <span class="project-tag">Rasterio</span>
+                <span class="project-tag">Sentinel-1</span>
+              </div>
+              <div class="project-links">
+                <!-- TODO: Replace href with the real GitHub repo URL for Flood Mapping -->
+                <a href="https://github.com/abinayamut" target="_blank" rel="noopener noreferrer" class="project-link" style="display:none;" aria-hidden="true">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836a9.59 9.59 0 012.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- AI Fake Media Detection -->
+          <article class="project-card reveal reveal-delay-1" data-cat="ai">
+            <div class="project-thumb">
+              <img src="projects/ai_media_detection/ai_media_dection_ss.png"
+                   alt="AI Fake Media Detection screenshot" loading="lazy">
+            </div>
+            <div class="project-body">
+              <h3>AI-Based Fake News &amp; Media Detection</h3>
+              <p>A machine-learning system for detecting fake news and manipulated media using NLP and image analysis techniques.</p>
+              <div class="project-tags">
+                <span class="project-tag">Python</span>
+                <span class="project-tag">NLP</span>
+                <span class="project-tag">Scikit-learn</span>
+                <span class="project-tag">Flask</span>
+              </div>
+              <div class="project-links">
+                <!-- TODO: Replace href with the real GitHub repo URL for AI Fake Media Detection -->
+                <a href="https://github.com/abinayamut" target="_blank" rel="noopener noreferrer" class="project-link" style="display:none;" aria-hidden="true">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836a9.59 9.59 0 012.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- JobGuard -->
+          <article class="project-card reveal reveal-delay-2" data-cat="web">
+            <div class="project-thumb">
+              <img src="projects/jobguard/jobguard_ss.png"
+                   alt="JobGuard AI monitoring dashboard concept mockup" loading="lazy"
+                   style="object-fit:cover;">
+            </div>
+            <div class="project-body">
+              <h3>JobGuard · AI User Monitoring (Concept UI)</h3>
+              <p>Anomaly detection concept system using Windows event/system data and Isolation Forest algorithm, presented with an interactive monitoring dashboard mockup. Individual contribution: frontend UI and concept design.</p>
+              <div class="project-tags">
+                <span class="project-tag">UI Concept</span>
+                <span class="project-tag">Python</span>
+                <span class="project-tag">Isolation Forest</span>
+                <span class="project-tag">Flask</span>
+              </div>
+              <div class="project-links">
+                <!-- TODO: Replace href with the real GitHub repo URL for JobGuard -->
+                <a href="https://github.com/abinayamut" target="_blank" rel="noopener noreferrer" class="project-link" style="display:none;" aria-hidden="true">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836a9.59 9.59 0 012.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Library Management System -->
+          <article class="project-card reveal" data-cat="web">
+            <div class="project-thumb">
+              <img src="projects/library_mangement_system/library_management_system_ss.png"
+                   alt="Library Management System screenshot" loading="lazy">
+            </div>
+            <div class="project-body">
+              <h3>Enhanced Library Management System</h3>
+              <p>Semester mini-project exploring library workflows: smart book recommendations, fine calculation, gamification badges, and user authentication.</p>
+              <div class="project-tags">
+                <span class="project-tag">Java</span>
+                <span class="project-tag">Spring Boot</span>
+                <span class="project-tag">MySQL</span>
+                <span class="project-tag">REST API</span>
+              </div>
+              <div class="project-links">
+                <!-- TODO: Replace href with the real GitHub repo URL for Library Management System -->
+                <a href="https://github.com/abinayamut" target="_blank" rel="noopener noreferrer" class="project-link" style="display:none;" aria-hidden="true">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836a9.59 9.59 0 012.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Post-TB Lung Risk Forecaster -->
+          <article class="project-card reveal reveal-delay-1" data-cat="ai">
+            <div class="project-thumb">
+              <img src="projects/post_TB_lung_risk_fro/post_tb_lung_ss.png"
+                   alt="Post-TB Lung Risk Forecaster dashboard screenshot" loading="lazy">
+            </div>
+            <div class="project-body">
+              <h3>Post-TB Lung Risk Forecaster</h3>
+              <p>Decision-support dashboard using machine learning to assess post-tuberculosis lung health risk, with document/image handling for medical records.</p>
+              <div class="project-tags">
+                <span class="project-tag">Python</span>
+                <span class="project-tag">Streamlit</span>
+                <span class="project-tag">Scikit-learn</span>
+                <span class="project-tag">Medical AI</span>
+              </div>
+              <div class="project-links">
+                <!-- TODO: Replace href with the real GitHub repo URL for Post-TB Lung Risk Forecaster -->
+                <a href="https://github.com/abinayamut" target="_blank" rel="noopener noreferrer" class="project-link" style="display:none;" aria-hidden="true">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836a9.59 9.59 0 012.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Canteen Management System -->
+          <article class="project-card reveal reveal-delay-2" data-cat="web">
+            <div class="project-thumb">
+              <img src="projects/canteen_mangement_system/canteen_management_system_ss.png"
+                   alt="Canteen Management System screenshot" loading="lazy">
+            </div>
+            <div class="project-body">
+              <h3>Canteen Management System</h3>
+              <p>A full-stack canteen management system for managing orders, menus, and payments in an academic setting.</p>
+              <div class="project-tags">
+                <span class="project-tag">Java</span>
+                <span class="project-tag">Spring Boot</span>
+                <span class="project-tag">MySQL</span>
+                <span class="project-tag">React</span>
+              </div>
+              <div class="project-links">
+                <!-- TODO: Replace href with the real GitHub repo URL for Canteen Management System -->
+                <a href="https://github.com/abinayamut" target="_blank" rel="noopener noreferrer" class="project-link" style="display:none;" aria-hidden="true">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836a9.59 9.59 0 012.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div><!-- /projects-grid -->
+      </div>
+    </section>
+
+
+    <!-- ════════════════════════════════════════
+         EXPERIENCE SECTION
+    ════════════════════════════════════════ -->
+    <section id="experience" aria-labelledby="experience-heading">
+      <div class="section-wrap">
+        <div class="section-header reveal">
+          <div>
+            <span class="eyebrow">Learning in progress</span>
+            <h2 class="heading" id="experience-heading">Experience &amp; Journey</h2>
+            <p class="sub-heading">Milestones that shaped my path as a developer.</p>
+          </div>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <div class="timeline-dot" aria-hidden="true">🎓</div>
+            <div class="timeline-body">
+              <div class="timeline-label">2023 — Present</div>
+              <div class="timeline-title">B.E. Computer Science Engineering</div>
+              <div class="timeline-desc">Kongunadu College of Engineering and Technology, Trichy. Building foundations in programming, algorithms, databases, and system design. Current CGPA: 7.8/10.</div>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal reveal-delay-1">
+            <div class="timeline-dot" aria-hidden="true">💼</div>
+            <div class="timeline-body">
+              <div class="timeline-label">IBM SkillsBuild · Online Internship</div>
+              <div class="timeline-title">Frontend Development Intern</div>
+              <div class="timeline-desc">Completed an IBM SkillsBuild-recognized frontend development internship via AICTE / Edunet Foundation. Covered HTML, CSS, JavaScript, and responsive web development fundamentals.</div>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal reveal-delay-2">
+            <div class="timeline-dot" aria-hidden="true">🏆</div>
+            <div class="timeline-body">
+              <div class="timeline-label">2024 · AISEHack</div>
+              <div class="timeline-title">Hackathon — Top 10 Finish</div>
+              <div class="timeline-desc">Team placed in the Top 10 at the AISEHack flood mapping challenge. Built a deep-learning pipeline using UNet++ to map flood extents from Sentinel-1 SAR satellite imagery.</div>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal reveal-delay-3">
+            <div class="timeline-dot" aria-hidden="true">🚀</div>
+            <div class="timeline-body">
+              <div class="timeline-label">Next chapter</div>
+              <div class="timeline-title">Backend &amp; Placement Preparation</div>
+              <div class="timeline-desc">Deepening Java, DSA, Spring Boot, and SQL expertise. Actively building projects and preparing for software engineering opportunities in 2025–26.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ════════════════════════════════════════
+         ACHIEVEMENTS SECTION
+    ════════════════════════════════════════ -->
+    <section id="achievements" aria-labelledby="achievements-heading">
+      <div class="section-wrap">
+        <div class="section-header reveal">
+          <div>
+            <span class="eyebrow">Milestones &amp; recognition</span>
+            <h2 class="heading" id="achievements-heading">Achievements</h2>
+          </div>
+        </div>
+
+        <div class="about-grid">
+          <div class="glass-card reveal">
+            <div style="font-size:36px; margin-bottom:12px;">🏆</div>
+            <h3>AISEHack — Top 10</h3>
+            <p style="color:var(--muted); font-size:14px; line-height:1.7; margin-top:8px;">
+              Team placed in the Top 10 at the AISEHack Flood Mapping Challenge, competing against college teams
+              nationwide using deep-learning satellite imagery analysis.
+            </p>
+          </div>
+          <div class="glass-card reveal reveal-delay-1">
+            <div style="font-size:36px; margin-bottom:12px;">🎤</div>
+            <h3>Paper Presentations</h3>
+            <p style="color:var(--muted); font-size:14px; line-height:1.7; margin-top:8px;">
+              Presented technical research papers at inter-college technical events including Sona College and Nandha College of Technology.
+            </p>
+          </div>
+          <div class="glass-card reveal reveal-delay-2">
+            <div style="font-size:36px; margin-bottom:12px;">💻</div>
+            <h3>Hackathon Participation</h3>
+            <p style="color:var(--muted); font-size:14px; line-height:1.7; margin-top:8px;">
+              Participated in 0x Day Hackathon and CMR Hackathon, building solutions under time pressure and developing real-world problem-solving skills.
+            </p>
+          </div>
+          <div class="glass-card reveal reveal-delay-3">
+            <div style="font-size:36px; margin-bottom:12px;">🎨</div>
+            <h3>District-Level Drawing Competition</h3>
+            <p style="color:var(--muted); font-size:14px; line-height:1.7; margin-top:8px;">
+              Certificate holder from a district-level drawing competition, reflecting creativity alongside technical pursuits.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ════════════════════════════════════════
+         CERTIFICATES SECTION
+    ════════════════════════════════════════ -->
+    <section id="certificates" aria-labelledby="certs-heading">
+      <div class="section-wrap">
+        <div class="section-header reveal">
+          <div>
+            <span class="eyebrow">Learning &amp; recognition</span>
+            <h2 class="heading" id="certs-heading">Certificates &amp; Events</h2>
+            <p class="sub-heading">Courses, workshops, industrial visits, and technical events.</p>
+          </div>
+        </div>
+
+        <div class="cert-categories">
+
+          <!-- Courses & Certifications -->
+          <div class="cert-category reveal">
+            <h3>📜 Courses &amp; Certifications</h3>
+            <div class="cert-grid">
+
+              <div class="cert-card">
+                <div class="cert-icon">☕</div>
+                <h4>Core Java Course</h4>
+                <p>Comprehensive Java programming course covering OOP, collections, and core APIs.</p>
+                <button class="cert-view" data-cert="certificates/CORE_JAVA_COURSE.jpg" aria-label="View Core Java certificate">View certificate ↗</button>
+              </div>
+
+              <div class="cert-card">
+                <div class="cert-icon">🌐</div>
+                <h4>Java Full Stack Development</h4>
+                <p>Full-stack development with Java, Spring Boot, and frontend technologies.</p>
+                <button class="cert-view" data-cert="certificates/JAVA_Fullstack.jpg" aria-label="View Java Full Stack certificate">View certificate ↗</button>
+              </div>
+
+              <div class="cert-card">
+                <div class="cert-icon">⚛️</div>
+                <h4>MERN Stack Completion</h4>
+                <p>MongoDB, Express, React, and Node.js full-stack web development.</p>
+                <button class="cert-view" data-cert="certificates/MERN_Completioncertificate.jpg" aria-label="View MERN certificate">View certificate ↗</button>
+              </div>
+
+              <div class="cert-card">
+                <div class="cert-icon">🐍</div>
+                <h4>Python Web App Development</h4>
+                <p>Building web applications with Python frameworks.</p>
+                <button class="cert-view" data-cert="certificates/python_web_app_course_certificate.jpg" aria-label="View Python Web App certificate">View certificate ↗</button>
+              </div>
+
+              <div class="cert-card">
+                <div class="cert-icon">🔌</div>
+                <h4>IoT Basics Internship</h4>
+                <p>Internet of Things fundamentals and hands-on basics internship.</p>
+                <button class="cert-view" data-cert="certificates/IOt_basics_intership.jpg" aria-label="View IoT internship certificate">View certificate ↗</button>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Hackathons & Competitions -->
+          <div class="cert-category reveal reveal-delay-1">
+            <h3>🏆 Hackathons &amp; Competitions</h3>
+            <div class="cert-grid">
+
+              <div class="cert-card">
+                <div class="cert-icon">⚡</div>
+                <h4>0x Day Hackathon</h4>
+                <p>Participation certificate from the 0x Day Hackathon.</p>
+                <button class="cert-view" data-cert="certificates/0x_Day Hackathon.jpg" aria-label="View 0x Day Hackathon certificate">View certificate ↗</button>
+              </div>
+
+              <div class="cert-card">
+                <div class="cert-icon">🏅</div>
+                <h4>CMR Hackathon</h4>
+                <p>Participation certificate from the CMR Hackathon.</p>
+                <button class="cert-view" data-cert="certificates/CMR_Hackathon.jpg" aria-label="View CMR Hackathon certificate">View certificate ↗</button>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Paper Presentations -->
+          <div class="cert-category reveal reveal-delay-2">
+            <h3>🎤 Paper Presentations</h3>
+            <div class="cert-grid">
+
+              <div class="cert-card">
+                <div class="cert-icon">📄</div>
+                <h4>Paper Presentation — Sona College</h4>
+                <p>Technical paper presentation at Sona College inter-collegiate event.</p>
+                <button class="cert-view" data-cert="certificates/paper persentatin_sona.jpg" aria-label="View Sona College paper presentation certificate">View certificate ↗</button>
+              </div>
+
+              <div class="cert-card">
+                <div class="cert-icon">📄</div>
+                <h4>Paper Presentation — Nandha College</h4>
+                <p>Technical paper presentation at Nandha College of Technology.</p>
+                <button class="cert-view" data-cert="certificates/paper_persentation_nandha_clg.jpg" aria-label="View Nandha College paper presentation certificate">View certificate ↗</button>
+              </div>
+
+              <div class="cert-card">
+                <div class="cert-icon">📄</div>
+                <h4>Paper Presentation Certificate</h4>
+                <p>Inter-collegiate technical paper presentation.</p>
+                <button class="cert-view" data-cert="certificates/paper_presentation_certificate.jpg" aria-label="View paper presentation certificate">View certificate ↗</button>
+              </div>
+
+              <div class="cert-card">
+                <div class="cert-icon">📄</div>
+                <h4>Paper Presentation — Additional</h4>
+                <p>Technical paper presentation at inter-college level.</p>
+                <button class="cert-view" data-cert="certificates/paperpercentation_certificates.jpg" aria-label="View additional paper presentation certificate">View certificate ↗</button>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Industrial Visits & Workshops -->
+          <div class="cert-category reveal reveal-delay-3">
+            <h3>🏭 Industrial Visits &amp; Workshops</h3>
+            <div class="cert-grid">
+
+              <div class="cert-card">
+                <div class="cert-icon">☁️</div>
+                <h4>Cloud Computing Industrial Visit</h4>
+                <p>Industrial visit focusing on cloud computing infrastructure and applications.</p>
+                <button class="cert-view" data-cert="certificates/cloud_computing_industrialvisit.jpg" aria-label="View cloud computing visit certificate">View certificate ↗</button>
+              </div>
+
+              <div class="cert-card">
+                <div class="cert-icon">🔧</div>
+                <h4>Industrial Visit Certificate</h4>
+                <p>Industry exposure through organized technical visit.</p>
+                <button class="cert-view" data-cert="certificates/idustrial vist.jpg" aria-label="View industrial visit certificate">View certificate ↗</button>
+              </div>
+
+              <div class="cert-card">
+                <div class="cert-icon">🌐</div>
+                <h4>IoT Industrial Visit</h4>
+                <p>Industrial visit with focus on Internet of Things applications.</p>
+                <button class="cert-view" data-cert="certificates/iot_industrial vist_certificate.jpg" aria-label="View IoT industrial visit certificate">View certificate ↗</button>
+              </div>
+
+              <div class="cert-card">
+                <div class="cert-icon">🔌</div>
+                <h4>EV Technology Workshop</h4>
+                <p>Workshop on recent trends in Electric Vehicle technology.</p>
+                <button class="cert-view" data-cert="certificates/workshop_certificate_recent trends in EV Technology.jpg" aria-label="View EV Technology workshop certificate">View certificate ↗</button>
+              </div>
+
+              <div class="cert-card">
+                <div class="cert-icon">🛠️</div>
+                <h4>Workshop Certificate</h4>
+                <p>Technical skills workshop participation certificate.</p>
+                <button class="cert-view" data-cert="certificates/workshop_certificate.jpg" aria-label="View workshop certificate">View certificate ↗</button>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Other -->
+          <div class="cert-category reveal reveal-delay-4">
+            <h3>🌟 Other Recognitions</h3>
+            <div class="cert-grid">
+
+              <div class="cert-card">
+                <div class="cert-icon">🎨</div>
+                <h4>District Level Drawing Competition</h4>
+                <p>Certificate from district-level drawing competition.</p>
+                <button class="cert-view" data-cert="certificates/district_level_drawing_competition_certificate.jpg" aria-label="View drawing competition certificate">View certificate ↗</button>
+              </div>
+
+              <div class="cert-card">
+                <div class="cert-icon">🧘</div>
+                <h4>National Yoga Day</h4>
+                <p>Participation and completion certificate for National Yoga Day event.</p>
+                <button class="cert-view" data-cert="certificates/national_yogaday_participation_certificate.jpg" aria-label="View Yoga Day certificate">View certificate ↗</button>
+              </div>
+
+              <div class="cert-card">
+                <div class="cert-icon">🏋️</div>
+                <h4>Yoga for Physical &amp; Mental Health</h4>
+                <p>Completion certificate for yoga for physical and mental health programme.</p>
+                <button class="cert-view" data-cert="certificates/yoga_for_physical_and_mental_health_completion_certificate.jpg" aria-label="View yoga completion certificate">View certificate ↗</button>
+              </div>
+
+            </div>
+          </div>
+
+        </div><!-- /cert-categories -->
+      </div>
+    </section>
+
+
+    <!-- ════════════════════════════════════════
+         CONTACT SECTION
+    ════════════════════════════════════════ -->
+    <section id="contact" aria-labelledby="contact-heading">
+      <div class="section-wrap">
+
+        <!-- Top: Google Form CTA card -->
+        <div class="contact-card contact-form-card reveal">
+          <div class="contact-form-card__inner">
+            <div class="contact-form-card__text">
+              <span class="eyebrow" style="color:var(--purple3);">Let's Connect</span>
+              <h2 id="contact-heading" style="font-family:'Manrope',sans-serif; font-weight:800; font-size:clamp(26px,3.5vw,42px); letter-spacing:-1.5px; color:var(--ink); margin:10px 0 14px;">Have a job opportunity, internship, collaboration idea, or question?</h2>
+              <p style="color:var(--muted); font-size:16px; line-height:1.75; max-width:540px;">I'd love to hear from you! Fill in the quick form and I'll get back to you as soon as possible.</p>
+            </div>
+            <div class="contact-form-card__action">
+              <a
+                href="https://forms.gle/L4LcZr44GAUz3W156"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-primary contact-form-btn"
+                aria-label="Open contact form in a new tab"
+              >
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                Send Me a Message
+              </a>
+              <p class="contact-form-note">Opens in Google Forms — no account needed</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom: existing social/contact links -->
+        <div class="contact-wrapper reveal" style="margin-top:28px;">
+          <div class="contact-text">
+            <span class="eyebrow">Or reach me directly</span>
+            <h2 style="font-family:'Manrope',sans-serif; font-weight:800; font-size:clamp(22px,3vw,36px); letter-spacing:-1px; color:#fff; margin:10px 0;">Let's build something meaningful.</h2>
+            <p>Open to internships, collaborations, and conversations about software development and AI.</p>
+          </div>
+          <div class="contact-links">
+            <a href="https://forms.gle/L4LcZr44GAUz3W156" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="Open Google Contact Form">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              Google Form
+            </a>
+            <a href="mailto:abinayamuthu111@gmail.com" class="contact-link" aria-label="Send email to Abinaya">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              abinayamuthu111@gmail.com
+            </a>
+            <a href="https://github.com/abinayamut" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="Abinaya's GitHub profile">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836a9.59 9.59 0 012.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+              GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/abinaya1111/" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="Abinaya's LinkedIn profile">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              LinkedIn
+            </a>
+            <a href="resume/abinaya-resume.pdf" download="Abinaya_Resume.pdf" class="contact-link" aria-label="Download Abinaya's resume">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              Download Resume
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main><!-- /main -->
+
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <p>Designed with 💜 by <strong>Abinaya M.</strong> · B.E. CSE · Kongunadu College of Engineering and Technology, Trichy · 2027</p>
+  </footer>
+
+
+  <!-- ── LIGHTBOX (Certificates) ── -->
+  <div class="lightbox-overlay" id="lightbox" role="dialog" aria-modal="true" aria-label="Certificate viewer" aria-hidden="true">
+    <div class="lightbox-inner">
+      <img src="" alt="Certificate" id="lightbox-img">
+      <button class="lightbox-close" id="lightbox-close" aria-label="Close certificate viewer">✕</button>
+    </div>
+  </div>
+
+
+  <!-- ── SCROLL TO TOP ── -->
+  <button id="scroll-top" aria-label="Scroll back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+
+  <!-- ════════════════════════════════════════
+       MAIN JAVASCRIPT
+  ════════════════════════════════════════ -->
+  <script>
+    'use strict';
+
+    // ── Custom Cursor ──────────────────────────────
+    const cursorDot  = document.getElementById('cursor-dot');
+    const cursorRing = document.getElementById('cursor-ring');
+    const cursorGlow = document.getElementById('cursor-glow');
+
+    let mouseX = 0, mouseY = 0;
+    let ringX  = 0, ringY  = 0;
+
+    document.addEventListener('mousemove', e => {
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+      cursorDot.style.left  = mouseX + 'px';
+      cursorDot.style.top   = mouseY + 'px';
+      cursorGlow.style.left = mouseX + 'px';
+      cursorGlow.style.top  = mouseY + 'px';
+    });
+
+    // Smooth ring follow
+    function animateRing() {
+      ringX += (mouseX - ringX) * 0.12;
+      ringY += (mouseY - ringY) * 0.12;
+      cursorRing.style.left = ringX + 'px';
+      cursorRing.style.top  = ringY + 'px';
+      requestAnimationFrame(animateRing);
+    }
+    animateRing();
+
+    // Scale ring on interactive elements
+    document.querySelectorAll('a, button, .project-card, .cert-card, .glass-card').forEach(el => {
+      el.addEventListener('mouseenter', () => {
+        cursorRing.style.width  = '56px';
+        cursorRing.style.height = '56px';
+        cursorRing.style.background = 'rgba(192,132,252,0.15)';
+      });
+      el.addEventListener('mouseleave', () => {
+        cursorRing.style.width  = '36px';
+        cursorRing.style.height = '36px';
+        cursorRing.style.background = 'transparent';
+      });
+    });
+
+
+    // ── Navigation: scroll class + active section ──
+    const nav = document.getElementById('main-nav');
+    const navLinks = document.querySelectorAll('.nav-links a');
+    const sections = document.querySelectorAll('section[id]');
+
+    // Declared here with null-check initialization for robustness
+    const scrollTopBtn = document.getElementById('scroll-top');
+
+    window.addEventListener('scroll', () => {
+      // Scrolled class
+      nav.classList.toggle('scrolled', window.scrollY > 40);
+
+      // Scroll-to-top button
+      if (scrollTopBtn) {
+        scrollTopBtn.classList.toggle('visible', window.scrollY > 300);
+      }
+
+      // Active nav link
+      let current = '';
+      sections.forEach(sec => {
+        if (window.scrollY >= sec.offsetTop - 100) current = sec.id;
+      });
+      navLinks.forEach(link => {
+        link.classList.toggle('active', link.getAttribute('href') === '#' + current);
+      });
+    }, { passive: true });
+
+
+    // ── Mobile menu ────────────────────────────────
+    const hamburger  = document.getElementById('hamburger-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    function closeMobileMenu() {
+      hamburger.classList.remove('open');
+      mobileMenu.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', 'false');
+      mobileMenu.setAttribute('aria-hidden', 'true');
+    }
+
+    hamburger.addEventListener('click', () => {
+      const isOpen = mobileMenu.classList.toggle('open');
+      hamburger.classList.toggle('open', isOpen);
+      hamburger.setAttribute('aria-expanded', String(isOpen));
+      mobileMenu.setAttribute('aria-hidden', String(!isOpen));
+    });
+
+    document.querySelectorAll('.mobile-nav-link').forEach(link => {
+      link.addEventListener('click', closeMobileMenu);
+    });
+
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') closeMobileMenu();
+    });
+
+
+    // ── Scroll reveal ──────────────────────────────
+    const revealObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+
+    // ── Project filter ─────────────────────────────
+    const filterBtns  = document.querySelectorAll('.filter-btn');
+    const projectCards = document.querySelectorAll('#projects-grid .project-card');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => {
+          b.classList.remove('active');
+          b.removeAttribute('aria-current');
+        });
+        btn.classList.add('active');
+        btn.setAttribute('aria-current', 'true');
+
+        const filter = btn.dataset.filter;
+        projectCards.forEach(card => {
+          const show = filter === 'all' || card.dataset.cat === filter;
+          card.classList.toggle('hidden', !show);
+        });
+      });
+    });
+
+
+    // ── Certificate lightbox ───────────────────────
+    const lightbox      = document.getElementById('lightbox');
+    const lightboxImg   = document.getElementById('lightbox-img');
+    const lightboxClose = document.getElementById('lightbox-close');
+
+    document.querySelectorAll('.cert-view').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const src = btn.dataset.cert;
+        lightboxImg.src = src;
+        lightboxImg.alt = btn.getAttribute('aria-label') || 'Certificate';
+        lightbox.classList.add('open');
+        lightbox.setAttribute('aria-hidden', 'false');
+        lightboxClose.focus();
+        document.body.style.overflow = 'hidden';
+      });
+    });
+
+    function closeLightbox() {
+      lightbox.classList.remove('open');
+      lightbox.setAttribute('aria-hidden', 'true');
+      lightboxImg.src = '';
+      document.body.style.overflow = '';
+    }
+
+    lightboxClose.addEventListener('click', closeLightbox);
+    lightbox.addEventListener('click', e => {
+      if (e.target === lightbox) closeLightbox();
+    });
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape' && lightbox.classList.contains('open')) closeLightbox();
+    });
+
+
+    // ── Scroll to top ──────────────────────────────
+    if (scrollTopBtn) {
+      scrollTopBtn.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    }
+
+  </script>
+
+</body>
+</html>

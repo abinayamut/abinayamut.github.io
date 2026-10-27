@@ -1,0 +1,58 @@
+# ── Node.js / Backend ─────────────────────────────────────────
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnp
+.pnp.js
+package-lock.json
+
+# ── Environment and secrets ───────────────────────────────────
+.env
+.env.local
+.env.*.local
+*.env
+
+# ── Operating system metadata ─────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ── Editor / IDE ──────────────────────────────────────────────
+.vscode/
+.idea/
+.gemini/
+scratch/
+*.suo
+*.user
+*.swp
+*.swo
+*~
+
+# ── Build outputs and caches ──────────────────────────────────
+dist/
+build/
+.cache/
+.parcel-cache/
+.next/
+out/
+*.log
+logs/
+
+# ── Temporary files ───────────────────────────────────────────
+*.tmp
+*.bak
+*.orig
+
+# ── NOTE: The following are kept and tracked intentionally ────
+# index.html, style.css       — portfolio source
+# profile/                    — profile photos and 3D avatar
+# certificates/               — all certificate images
+# resume/                     — resume PDF
+# projects/*_ss.png           — project screenshots
+# .gitignore itself           — this file
